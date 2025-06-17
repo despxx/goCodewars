@@ -1,3 +1,20 @@
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var number int
+// 	fmt.Println("Введите число: ")
+// 	fmt.Scan(&number)
+
+// 	if number%2 == 0 {
+// 		fmt.Println("Even")
+// 	} else {
+// 		fmt.Println("Odd")
+// 	}
+// }
+
+// ---------------------------------------------------
 package kata
 
 // MARK: - 8kyu
@@ -17,18 +34,40 @@ func EvenOrOdd(number int) string {
 
 //---------------------------------------------------
 
-// package main
+/*
+Multiply
+*/
 
-// import "fmt"
+func Multiply(a, b int) int {
+	return a * b
+}
 
-// func main() {
-// 	var number int
-// 	fmt.Println("Введите число: ")
-// 	fmt.Scan(&number)
+//---------------------------------------------------
 
-// 	if number%2 == 0 {
-// 		fmt.Println("Even")
-// 	} else {
-// 		fmt.Println("Odd")
-// 	}
-// }
+/*
+Return Negative
+*/
+
+func MakeNegative(x int) int {
+	if x > 0 {
+		return -x
+	}
+	return x
+}
+
+//---------------------------------------------------
+
+/*
+Sum of positive
+*/
+
+func PositiveSum(numbers []int) (sum int) {
+	for _, num := range numbers {
+		if num > 0 {
+			sum = sum + num
+		}
+	}
+	return
+}
+
+//---------------------------------------------------
